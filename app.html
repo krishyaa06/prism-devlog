@@ -1,0 +1,17 @@
+    <section class="grid g2 dl">
+      <div class="card form">
+        <div class="card-title"><h2>Today's log</h2><div class="row"><button class="btn small" id="nextDay">Next day →</button></div></div>
+        <div class="grid g2"><label class="field"><span>Project</span><input id="project" /></label><label class="field"><span>Day #</span><input id="day" type="number" min="1" /></label></div>
+        <label class="field"><span>Shipped (one per line)</span><textarea id="shipped" rows="4"></textarea></label>
+        <label class="field"><span>Learned</span><textarea id="learned" rows="2"></textarea></label>
+        <label class="field"><span>Numbers (optional)</span><input id="stats" placeholder="42 stars · 120 users" /></label>
+        <label class="field"><span>Next</span><textarea id="next" rows="2"></textarea></label>
+        <div class="grid g2"><label class="field"><span>Link</span><input id="link" /></label><label class="field"><span>Hashtags</span><input id="tags" /></label></div>
+        <label class="field"><span>Tone</span><select id="tone"><option value="hype">Hype</option><option value="chill">Chill</option><option value="pro">Professional</option></select></label>
+      </div>
+      <div class="card out-card">
+        <div class="card-title"><h2>Post</h2><div class="tabs" id="plat"><button class="on" data-v="x">X</button><button data-v="linkedin">LinkedIn</button><button data-v="discord">Discord</button></div></div>
+        <div id="posts"></div>
+        <div class="row"><button class="btn small primary" id="copyAll">Copy all</button><a class="btn small" id="intent" target="_blank" rel="noopener">Open in X</a></div>
+      </div>
+    </section>

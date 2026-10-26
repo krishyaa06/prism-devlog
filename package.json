@@ -1,0 +1,30 @@
+{
+  "name": "prism-devlog",
+  "version": "1.0.0",
+  "description": "Build-in-public devlog generator for X, LinkedIn and Discord with thread splitting and X-accurate character counts.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "build-in-public",
+    "devlog",
+    "twitter",
+    "x",
+    "linkedin",
+    "discord",
+    "indie-hacker",
+    "vibe-coding",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-devlog.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-devlog/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

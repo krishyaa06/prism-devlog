@@ -1,0 +1,9 @@
+.dl{align-items:start}.form .field{margin-top:12px}.form textarea{min-height:0}
+.out-card{position:sticky;top:76px}
+.tw{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px;display:flex;gap:12px;background:#0a0d19}
+.av{width:40px;height:40px;border-radius:50%;flex:none;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-weight:700;color:#061016}
+.tw .body{flex:1;min-width:0}.tw .who{font-size:14px;margin-bottom:4px}.tw .who span{color:var(--muted)}
+.tw .txt{white-space:pre-wrap;word-break:break-word;font-size:14px;line-height:1.5}
+.tw .foot{display:flex;justify-content:space-between;margin-top:8px;font:12px var(--mono);color:var(--muted)}.tw .foot .bad{color:var(--bad)}
+.tw button{font:12px var(--mono);background:none;border:0;color:var(--accent);cursor:pointer;padding:0}
+@media (max-width:900px){.out-card{position:static}}
