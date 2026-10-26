@@ -6,7 +6,7 @@
   function render() {
     store.set("dl:in", I);
     cur = Core.post(I, plat); const lim = Core.LIMITS[plat];
-    $("#posts").innerHTML = cur.thread.map((t, i) => { const n = plat === "x" ? Core.xLength(t) : t.length; return `<div class="tw"><div class="av">${esc((I.project || "P")[0])}</div><div class="body"><div class="who"><b>${esc(I.project || "You")}</b> <span>@krishyaa06${cur.thread.length > 1 ? ` · ${i + 1}/${cur.thread.length}` : ""}</span></div><div class="txt">${esc(t)}</div><div class="foot"><span class="${n > lim ? "bad" : ""}">${n}/${lim}</span><button data-i="${i}">Copy</button></div></div></div>`; }).join("");
+    $("#posts").innerHTML = cur.thread.map((t, i) => { const n = plat === "x" ? Core.xLength(t) : t.length; return `<div class="tw"><div class="av">${esc((I.project || "P")[0])}</div><div class="body"><div class="who"><b>${esc(I.project || "You")}</b> <span>@krishyaa06${cur.thread.length > 1 ? ` · ${i + 1}/${cur.thread.length}` : ""}</span></div><div class="txt">${esc(t)}</div><div class="tfoot"><span class="${n > lim ? "bad" : ""}">${n}/${lim}</span><button data-i="${i}">Copy</button></div></div></div>`; }).join("");
     $$("#posts [data-i]").forEach((b) => (b.onclick = () => copy(cur.thread[+b.dataset.i])));
     $("#intent").hidden = plat !== "x"; $("#intent").href = `https://x.com/intent/post?text=${encodeURIComponent(cur.thread[0])}`;
   }
